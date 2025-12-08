@@ -5,8 +5,8 @@ import { Input } from '@/components/ui/input';
 type CustomInputProps = {
   label?: string;
   error?: string | null;
-  startIcon: React.ReactNode;
-  endIcon: React.ReactNode;
+  startIcon?: React.ReactNode;
+  endIcon?: React.ReactNode;
   name?: string;
 } & React.ComponentProps<'input'>;
 
