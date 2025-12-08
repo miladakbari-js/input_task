@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
@@ -7,6 +8,7 @@ import * as yup from 'yup';
 import CustomInput from '@/components/ui/CustomInput';
 import { Button } from '@/components/ui/button';
 import { TestStartIcon, TestEndIcon } from '@/components/ui/icons';
+import { Eye, EyeOff, Lock } from 'lucide-react';
 
 const schema = yup.object({
   email: yup.string().email('ایمیل معتبر نیست').required('ایمیل الزامی است'),
@@ -29,6 +31,11 @@ function TestInpuForm() {
     console.log('Form Submitted', data);
   };
 
+  const [showPassword, setShowPassword] = useState(false);
+  const togglePasswordVisibility = () => {
+    setShowPassword((prev) => !prev);
+  };
+
   return (
     <div className="mx-auto mt-10 max-w-md space-y-8 rounded border-2 p-10">
       <div className="flex w-full items-center justify-center">
@@ -47,10 +54,17 @@ function TestInpuForm() {
       {/* Password */}
       <CustomInput
         label="رمز عبور"
-        startIcon={<TestEndIcon />}
+        startIcon={<Lock size={18} />}
+        endIcon={
+          showPassword ? (
+            <EyeOff size={18} className="cursor-pointer" onClick={togglePasswordVisibility} />
+          ) : (
+            <Eye size={18} className="cursor-pointer" onClick={togglePasswordVisibility} />
+          )
+        }
         error={errors.password?.message}
         {...register('password')}
-        type="password"
+        type={showPassword ? 'text' : 'password'}
         placeholder="رمز عبور خود را وارد کنید"
       />
 
