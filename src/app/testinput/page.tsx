@@ -30,8 +30,10 @@ function TestInpuForm() {
   };
 
   return (
-    <div className="mx-auto mt-10 max-w-md space-y-6">
-      <h1 className="text-xl font-bold"> فرم تست CustomInput</h1>
+    <div className="mx-auto mt-10 max-w-md space-y-8 rounded border-2 p-10">
+      <div className="flex w-full items-center justify-center">
+        <h1 className="text-xl font-bold"> فرم تست CustomInput</h1>
+      </div>
 
       {/* Email */}
       <CustomInput
@@ -44,7 +46,7 @@ function TestInpuForm() {
 
       {/* Password */}
       <CustomInput
-        label="پسورد"
+        label="رمز عبور"
         startIcon={<TestEndIcon />}
         error={errors.password?.message}
         {...register('password')}
@@ -52,7 +54,10 @@ function TestInpuForm() {
         placeholder="رمز عبور خود را وارد کنید"
       />
 
-      <Button onClick={handleSubmit(onSubmit)} className="w-full">
+      <Button
+        onClick={handleSubmit(onSubmit)}
+        className="mt-6 w-full cursor-pointer rounded-sm bg-blue-600 transition-all duration-200 hover:bg-blue-700 active:scale-95"
+      >
         ارسال فرم
       </Button>
     </div>
