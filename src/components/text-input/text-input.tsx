@@ -29,7 +29,10 @@ export const TextInput = React.forwardRef<HTMLInputElement, CustomInputProps>(
           />
 
           {endIcon && (
-            <span className="pointer-events-auto absolute top-1/2 right-3 -translate-y-1/2">
+            <span
+              data-testid="end-icon"
+              className="pointer-events-auto absolute top-1/2 right-3 -translate-y-1/2"
+            >
               {endIcon}
             </span>
           )}
