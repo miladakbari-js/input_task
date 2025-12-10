@@ -10,3 +10,8 @@ export type CustomInputProps = {
 } & React.ComponentProps<'input'>;
 
 export type FormValues = yup.InferType<typeof schema>;
+
+export type LabelProps = {
+  label: string;
+  className?: string;
+};

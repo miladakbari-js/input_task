@@ -2,12 +2,13 @@ import React from 'react';
 import { cn } from '@/lib/utils';
 import { Input } from '@/components/text-input/input';
 import { CustomInputProps } from './types.d';
+import Label from '@/components/ui/label';
 
 export const TextInput = React.forwardRef<HTMLInputElement, CustomInputProps>(
   ({ label, error, startIcon, endIcon, className, ...props }, ref) => {
     return (
       <div className="flex flex-col space-y-1">
-        {label ? <label className="mb-4 text-sm font-medium text-gray-200">{label}</label> : null}
+        {label ? <Label label={label} /> : null}
 
         <div className="relative">
           {startIcon && (

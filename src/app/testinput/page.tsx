@@ -70,7 +70,7 @@ function TestInpuForm() {
 
       <Button
         onClick={handleSubmit(onSubmit)}
-        className="mt-6 w-full cursor-pointer rounded-sm bg-blue-600 transition-all duration-200 hover:bg-blue-700 active:scale-95"
+        className="mt-6 h-10 w-full cursor-pointer rounded-sm bg-blue-600 transition-all duration-200 hover:bg-blue-700 active:scale-95"
       >
         ارسال فرم
       </Button>
