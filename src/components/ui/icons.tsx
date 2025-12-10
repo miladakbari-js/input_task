@@ -1,9 +1,6 @@
 import React from 'react';
+import { TestIconProps } from './types';
 
-export const TestStartIcon: React.FC<{ className?: string }> = ({ className }) => (
-  <span className={className ?? 'text-gray-500'}>✉</span>
-);
-
-export const TestEndIcon: React.FC<{ className?: string }> = ({ className }) => (
-  <span className={className ?? 'text-gray-500'}>✦</span>
+export const TestIcon: React.FC<TestIconProps> = ({ className, icon }) => (
+  <span className={className ?? 'text-gray-500'}>{icon}</span>
 );
