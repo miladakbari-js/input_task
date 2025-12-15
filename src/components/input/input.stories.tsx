@@ -1,6 +1,5 @@
 import React from 'react';
-import { Input } from '../text-input/input';
-
+import { Input } from '../input/input';
 
 export default {
   title: 'Components/Input',

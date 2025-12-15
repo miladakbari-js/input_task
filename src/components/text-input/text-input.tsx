@@ -1,6 +1,6 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { Input } from '@/components/text-input/input';
+import { Input } from '@/components/input/input';
 import { CustomInputProps } from './types.d';
 import Label from '@/components/label/label';
 
