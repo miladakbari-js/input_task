@@ -5,7 +5,7 @@ import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 
 import { Button } from '@/components/button/button';
-import { TestIcon } from '@/components/ui/icons';
+import { TestIcon } from '@/components/icon/icons';
 import { Eye, EyeOff, Lock } from 'lucide-react';
 import { schema } from '@/components/text-input/schema';
 import { FormValues, TextInput } from '@/components/text-input';

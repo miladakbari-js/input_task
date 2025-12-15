@@ -1,6 +1,6 @@
 import React from 'react';
 import { Check, X } from 'lucide-react';
-import { TestIcon } from '../ui/icons';
+import { TestIcon } from './icons';
 
 export default {
   title: 'Components/TestIcon',
@@ -11,5 +11,5 @@ export default {
   },
 };
 
-export const Default = () => <TestIcon icon={<Check />} className="text-blue-500 text-xl" />;
-export const ErrorIcon = () => <TestIcon icon={<X />} className="text-red-500 text-2xl" />;
+export const Default = () => <TestIcon icon={<Check />} className="text-xl text-blue-500" />;
+export const ErrorIcon = () => <TestIcon icon={<X />} className="text-2xl text-red-500" />;

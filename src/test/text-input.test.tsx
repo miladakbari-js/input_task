@@ -4,7 +4,7 @@ import React from 'react';
 
 import { Eye } from 'lucide-react';
 import { TextInput } from '@/components/text-input';
-import { TestIcon } from '@/components/ui/icons';
+import { TestIcon } from '@/components/icon/icons';
 
 describe('TextInput Component', () => {
   test('renders input with label', () => {
