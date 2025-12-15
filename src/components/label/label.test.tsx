@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import Label from '@/components/ui/label';
+import Label from '@/components/label/label';
 
 describe('Label Component', () => {
   test('renders label text', () => {
