@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import React from 'react';
-import { TestIcon } from '@/components/icon/icons';
+import { TestIcon } from '@/components/ui/icon/icons';
 
 describe('TestIcon Component', () => {
   test('renders icon text', () => {

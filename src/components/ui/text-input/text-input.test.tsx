@@ -3,8 +3,9 @@ import '@testing-library/jest-dom';
 import React from 'react';
 
 import { Eye } from 'lucide-react';
-import { TextInput } from '@/components/text-input';
-import { TestIcon } from '@/components/icon/icons';
+
+import { TestIcon } from '@/components/ui/icon/icons';
+import { TextInput } from './text-input';
 
 describe('TextInput Component', () => {
   test('renders input with label', () => {

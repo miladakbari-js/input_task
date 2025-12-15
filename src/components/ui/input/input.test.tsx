@@ -1,7 +1,7 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import React from 'react';
-import { Input } from '@/components/input/input';
+import { Input } from '@/components/ui/input/input';
 
 describe('Input Component', () => {
   test('renders input element with provided type and className', () => {

@@ -1,8 +1,8 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { Input } from '@/components/input/input';
-import { CustomInputProps } from './types.d';
-import Label from '@/components/label/label';
+import { Input } from '@/components/ui/input/input';
+import { CustomInputProps } from './types';
+import Label from '@/components/ui/label/label';
 
 export const TextInput = React.forwardRef<HTMLInputElement, CustomInputProps>(
   ({ label, error, startIcon, endIcon, className, ...props }, ref) => {
