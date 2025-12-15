@@ -5,6 +5,4 @@ export type TestIconProps = {
   icon?: ReactNode;
 };
 
-export type ButtonProps = React.ComponentProps<'button'> & {
-  className?: string;
-};
+
