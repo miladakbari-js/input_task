@@ -8,10 +8,9 @@ import { TestIcon } from '@/components/ui/icon/icons';
 import { Eye, EyeOff, Lock } from 'lucide-react';
 import { schema } from '@/components/ui/text-input/schema';
 
-import Image from 'next/image';
-import emailIcon from '@/assets/icons/email.png';
 import { Button } from '@/components/ui/button';
 import { FormValues, TextInput } from '@/components/ui/text-input';
+import { MailIcon } from '@/components/shared/icons';
 
 function TestInpuForm() {
   const {
@@ -41,12 +40,7 @@ function TestInpuForm() {
       {/* Email */}
       <TextInput
         label="ایمیل"
-        startIcon={
-          <TestIcon
-            className="w-3"
-            icon={<Image src={emailIcon} alt="email_icon" width={30} height={30} />}
-          />
-        }
+        startIcon={<MailIcon className="h-4 w-4 text-white" />}
         error={errors.email?.message}
         {...register('email')}
         placeholder="ایمیل خود را وارد کنید"
