@@ -1,6 +1,5 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { Input } from '@/components/ui/input/input';
 import { CustomInputProps } from './types';
 import Label from '@/components/ui/label/label';
 
@@ -16,7 +15,7 @@ export const TextInput = React.forwardRef<HTMLInputElement, CustomInputProps>(
               {startIcon}
             </div>
           )}
-          <Input
+          <input
             ref={ref}
             className={cn(
               'mx-auto flex w-full max-w-md flex-col gap-1 p-2',
